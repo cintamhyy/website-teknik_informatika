@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknik Informatika Universitas Riau</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style/style2.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="https://kit.fontawesome.com/d9b3dfa111.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?client=google-maps-embed&amp;paint_origin=&amp;libraries=geometry,search&amp;v=3.exp&amp;language=en&amp;region=id&amp;callback=onApiLoad" nonce="" async="" defer=""></script>
+    <script src="https://maps.gstatic.com/maps-api-v3/embed/js/53/2/init_embed.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header >
+        <div class="container-fluid ">
+            <div class="nav-logo z-3">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Asset/s1-informatika-new.png" alt=""></a>
+            </div>
+
+            <div class="navb-items d-none d-xl-flex">
+
+                <div class="item">
+                    <a class="nav-link mx-3 fs-5 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+                    <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item" href="sejarah.html">Sejarah </a></li>
+                        <li><a class="dropdown-item" href="visi-misi.html">Visi dan Misi</a></li>
+                        <li><a class="dropdown-item" href="tujuan.html">Tujuan</a></li>
+                        <li><a class="dropdown-item" href="sasaran.html">Sasaran </a></li>
+                        <li><a class="dropdown-item" href="strategi.html">Strategi</a></li>
+                        <li><a class="dropdown-item" href="akreditasi.html">Akreditasi</a></li>
+                        <li><a class="dropdown-item" href="dosen.html">Dosen</a></li>
+                        <li><a class="dropdown-item" href="tenaga-pendidikan.html">Tenaga Pendidikan</a></li>
+                        <li><a class="dropdown-item" href="rpl.html">Lab. RPL</a></li>
+                        <li><a class="dropdown-item" href="jarkom.html">Lab. Jarkom</a></li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <a class="nav-link mx-3 fs-5 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Akademik</a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="kurikulum.html">Kurikulum</a></li>
+                            <li><a class="dropdown-item" href="jadwal-kuliah.html">Jadwal Kuliah</a></li>
+                            <li><a class="dropdown-item" href="kalender-akademik.html">Kalender Akademik</a></li>
+                            <li><a class="dropdown-item" href="mikrotik-akademi.html">Mikrotik Akademi</a></li>
+                        </ul>
+                </div>
+
+                <div class="item">
+                    <a class="nav-link mx-3 fs-5 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                            <li><a class="dropdown-item" href="event.html">Event</a></li>
+                            <li><a class="dropdown-item" href="prestasi-mahasiswa.html">Prestasi Mahasiswa</a></li>
+                            <li><a class="dropdown-item" href="poster-mahasiswa.html">Poster Mahasiswa</a></li>
+                        </ul>
+                </div>
+
+                <div class="item">
+                    <a class="nav-link mx-3 fs-5 " href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Galeri</a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="foto.html">Foto</a></li>
+                        <li><a class="dropdown-item" href="video.html">Video</a></li>
+                        <li><a class="dropdown-item" href="virtua-ltour.html">Virtual Tour</a></li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <a href="kontak.html" class="nav-link mx-3 fs-5">Kontak</a>
+                </div>
+
+                <div class="item-button">
+                    <a href="search.html" type="button">Search</a>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <div class="mobile-toggler d-lg-none">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                    <i class="fa-solid fa-bars" style="color: white;"></i>
+                </a>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <img src="Asset/s1-informatika-new.png" alt="Logo">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-line">
+                                <a class="nav-link mx-3 fs-5 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item" href="sejarah.html">Sejarah </a></li>
+                                    <li><a class="dropdown-item" href="visi-misi.html">Visi dan Misi</a></li>
+                                    <li><a class="dropdown-item" href="tujuan.html">Tujuan</a></li>
+                                    <li><a class="dropdown-item" href="sasaran.html">Sasaran </a></li>
+                                    <li><a class="dropdown-item" href="strategi.html">Strategi</a></li>
+                                    <li><a class="dropdown-item" href="akreditasi.html">Akreditasi</a></li>
+                                    <li><a class="dropdown-item" href="dosen.html">Dosen</a></li>
+                                    <li><a class="dropdown-item" href="tenaga-pendidikan.html">Tenaga Pendidikan</a></li>
+                                    <li><a class="dropdown-item" href="rpl.html">Lab. RPL</a></li>
+                                    <li><a class="dropdown-item" href="jarkom.html">Lab. Jarkom</a></li>
+                                </ul>
+                            </div>
+                            <div class="modal-line">
+                                <a class="nav-link mx-3 fs-5 " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Akademik</a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item" href="kurikulum.html">Kurikulum</a></li>
+                                    <li><a class="dropdown-item" href="jadwal-kuliah.html">Jadwal Kuliah</a></li>
+                                    <li><a class="dropdown-item" href="kalender-akademik.html">Kalender Akademik</a></li>
+                                    <li><a class="dropdown-item" href="mikrotik-akademi.html">Mikrotik Akademi</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="modal-line">
+                                <a class="nav-link mx-3 fs-5 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                                    <li><a class="dropdown-item" href="event.html">Event</a></li>
+                                    <li><a class="dropdown-item" href="prestasi-mahasiswa.html">Prestasi Mahasiswa</a></li>
+                                    <li><a class="dropdown-item" href="poster-mahasiswa.html">Poster Mahasiswa</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="modal-line">
+                                <a class="nav-link mx-3 fs-5 " href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false">Galeri</a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item" href="foto.html">Foto</a></li>
+                                    <li><a class="dropdown-item" href="video.html">Video</a></li>
+                                    <li><a class="dropdown-item" href="virtua-ltour.html">Virtual Tour</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="modal-line">
+                                <a href="kontak.html" class="nav-link mx-3 fs-5">Kontak</a>
+                            </div>
+
+                            <a href="search.html" class="navb-button" type="button">
+                                Search</a>
+                        </div>
+
+                        <div class="mobile-modal-footer">
+                            <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro-2">
+        <img src="Asset/gedungc-2.jpg" class="img-fluid" alt="" style="width:100%;position: relative;" >
+        <div class="judul container">
+            <h1>JADWAL KULIAH</h1>
+        </div>
+    </div>
+
+
+    <!-- pembatas -->
+    <div class="pembatas flex-fill">
+        <img src="Asset/strip2.png" class="img-fluid" alt="">
+    </div>
+
+
+    <!-- kurikulum -->
+    <section>
+        <div class="kurikulum container">
+            <h1 class="fs-1" >Jadwal Kuliah </h1>
+            <p>Jadwal Kuliah Teknik Informatika Ganjil 2022-2023</p>
+            <iframe src="//docs.google.com/viewer?url=http%3A%2F%2Finformatika.ft.unri.ac.id%2Fwp-content%2Fuploads%2FJadwal-TI-Ganjil-2022-2023.pdf&amp;hl=en_US&amp;embedded=true" class="gde-frame" style="width:100%; height:500px; border: none;" scrolling="no"></iframe>
+
+            <p style="margin-top: 50px;">Jadwal Kuliah Teknik Informatika Genap 2022-2023</p>
+            <iframe src="//docs.google.com/viewer?url=http%3A%2F%2Finformatika.ft.unri.ac.id%2Fwp-content%2Fuploads%2FJadwal-TI-Genap-2022-2023.pdf&amp;hl=en_US&amp;embedded=true" class="gde-frame" style="width:100%; height:500px; border: none;margin-bottom: 50px;" scrolling="no"></iframe>
+        </div>
+    </section>
+
+    <!-- pembatas -->
+    <div class="pembatas flex-fill">
+        <img src="Asset/strip2.png" class="img-fluid" alt="">
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg col-sm ">
+                    <div class="single-box">
+                        <img src="Asset/s1-informatika-new.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg col-sm">
+                    <div class="single-box" style="padding: 10px;">
+                        <h2>Alamat</h2>
+                        <p>Gedung C lantai 2</p>
+                        <p>Fakultas Teknik Universitas Riau</p>
+                        <p>Kampus Binawidya</p>
+                        <p>Jl. HR Soebrantas KM. 12.5,</p>
+                        <p>Simpang Baru, Binawidya, Pekanbaru - 28293 </p>
+                    </div>
+                </div>
+                <div class="col-lg col-sm">
+                    <div class="single-box" style="padding: 10px;">
+                        <h2>Kontak</h2>
+                        <i class="fa-regular fa-envelope" style="color: #ffffff;">
+                            <span>informatika@eng.unri.ac.id</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
